@@ -70,11 +70,16 @@ header{
 }
 .banner-text{
     position: absolute;
-    width: 100%;
-    margin: auto;
+    width: 100%;    
     text-align: center;
-    top:40%;
+    // top:40%;
+    // margin: auto;
     z-index: 10;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 .banner-text-items {
     color: $text-color;
@@ -90,7 +95,7 @@ header{
 // navigation
 nav{
     text-align: center;
-    flex: 2;
+    flex: 3;
     a{
         text-decoration: none;
         color: $text-color;
@@ -115,11 +120,11 @@ main{
     display: flex;
 }
 .sideleft{
-    width: 30%;
+    
     flex: 1;
 }
 .sideright{
-    width: 60%;
+    margin-right: 4rem;
     flex:2;
 }
 .btn{
@@ -135,7 +140,6 @@ main{
 }
 .box{
     width: 30%;
-    float: left;
     padding: 2em;
     text-align: center;
     color: $text-color;
