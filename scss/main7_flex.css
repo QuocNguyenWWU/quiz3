@@ -10827,6 +10827,9 @@ header {
   color: #fff;
   font-weight: bold;
   font-size: 3rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .banner {
@@ -10841,10 +10844,22 @@ header {
 .banner-text {
   position: absolute;
   width: 100%;
-  margin: auto;
   text-align: center;
-  top: 40%;
   z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .banner-text-items {
@@ -10860,6 +10875,9 @@ header {
 
 nav {
   text-align: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
 }
 
 nav a {
@@ -10882,14 +10900,23 @@ main {
   background-color: #eee;
 }
 
+.main-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .sideleft {
-  width: 30%;
-  float: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .sideright {
-  width: 60%;
-  float: right;
+  margin-right: 4rem;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .btn {
@@ -10902,12 +10929,20 @@ main {
   border-radius: 25px;
 }
 
+.box-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .box {
   width: 30%;
-  float: left;
   padding: 2em;
   text-align: center;
   color: #fff;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
 .box .fas {
